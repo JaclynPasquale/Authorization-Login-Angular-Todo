@@ -34,12 +34,16 @@
       return ref.getAuth().password.isTemporaryPassword;
     }
 
-    factory.changePassword = function(oldpassword, newPassword, cb){
+    factory.changePassword = function(oldPassword, newPassword, cb){
+      console.log({
+        email       : ref.getAuth().password.email,
+        oldPassword : oldPassword,
+        newPassword : newPassword});
 
       ref.changePassword({
         email       : ref.getAuth().password.email,
-        oldPassword : oldpassword,
-        newPassword : newpassword
+        oldPassword : oldPassword,
+        newPassword : newPassword
       }, function(error) {
         if (error === null) {
           console.log("Password changed successfully");
@@ -106,11 +110,11 @@ factory.resetPassword = function(email){
 };
 return factory;
 })
-.controller('ChangePasswordController', function($location, $scope){
+.controller('ChangePasswordController', function(authFactory, $location, $scope){
   var vm = this;
 
   vm.changePassword = function(){
-    authFactory.changePassword(vm.oldPassword, function(){
+    authFactory.changePassword(vm.oldPassword, vm.newPassword, function(){
       $location.path('/todos');
       $scope.$apply();
     })

@@ -11,10 +11,10 @@
 <body>
   <div class="container">
     <h1>My Todos</h1>
-    <a class="btn btn-primary" href="/#/">All Todos</a>
-    <a class="btn btn-primary" href="/#/new">New Todo</a>
+    <a class="btn btn-primary" href="/#/todos">All Todos</a>
+    <a class="btn btn-primary" href="/#/todos/new">New Todo</a>
     <a class="btn btn-success" ng-hide="user" href="/#/login">Login</a>
-    <a class="btn btn-success" ng-show="user" href="/#/changepassword">Change Password</a>
+    <a class="btn btn-warning" ng-show="user" href="/#/changepassword">Change Password</a>
     <a class="btn btn-danger" ng-show="user" href="/#/logout">Logout</a>
     <div ng-view></div>
   </div>

@@ -11,10 +11,10 @@
   <tbody>
     <tr ng-repeat="(taskId, task) in todo.tasks">
       <td><img class="todo-img" ng-src="{{task.image}}"></td>
-      <td>{{task.name}}</td>
-      <td>{{task.desc}}</td>
-      <td>{{task.due | date}}</td>
-      <td>{{task.priority}}</td>
+      <td>{{item.name}}</td>
+      <td>{{item.desc}}</td>
+      <td>{{item.due | date}}</td>
+      <td>{{item.priority}}</td>
       <td>
         <a class="btn btn-primary" href="/#/{{taskId}}">Show</a>
         <a class="btn btn-primary" href="/#/{{taskId}}/edit">Edit</a>

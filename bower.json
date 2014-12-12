@@ -1,9 +1,9 @@
 {
-  "name": "NSS-SimpleAngularBinding",
+  "name": "Authorization-Login-Angular-Todo",
   "version": "0.0.0",
-  "homepage": "https://github.com/sscotth/NSS-SimpleAngularBinding",
+  "homepage": "https://github.com/JaclynPasquale/Authorization-Login-Angular-Todo",
   "authors": [
-    "Scott <scott@sscotth.io>"
+    "Jackie <jaclynpasquale@gmail.com>"
   ],
   "license": "MIT",
   "ignore": [
