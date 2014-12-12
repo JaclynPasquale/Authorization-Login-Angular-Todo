@@ -13,8 +13,12 @@
     <h1>My Todos</h1>
     <a class="btn btn-primary" href="/#/">All Todos</a>
     <a class="btn btn-primary" href="/#/new">New Todo</a>
+    <a class="btn btn-success" ng-hide="user" href="/#/login">Login</a>
+    <a class="btn btn-success" ng-show="user" href="/#/changepassword">Change Password</a>
+    <a class="btn btn-danger" ng-show="user" href="/#/logout">Logout</a>
     <div ng-view></div>
   </div>
+  <script src="bower_components/firebase/firebase.js"></script>
   <script src="bower_components/jquery/dist/jquery.min.js"></script>
   <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
   <script src="bower_components/angular/angular.min.js"></script>
@@ -26,5 +30,6 @@
   <script src="js/config.js"></script>
   <script src="js/factories.js"></script>
   <script src="js/controllers.js"></script>
+  <script src="js/constant.js"></script>
 </body>
 </html>

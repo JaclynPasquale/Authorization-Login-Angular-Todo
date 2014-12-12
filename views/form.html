@@ -1,13 +1,13 @@
 <form name="myForm" ng-submit="myForm.$valid && todo.addNewTask()" novalidate>
-  <div class="form-group" ng-class="{'has-error': !todo.newTask.name}">
+  <div class="form-group" ng-class="{"has-error": !todo.newTask.name}">
     <label class="control-label">Name</label>
     <input class="form-control" type="text" ng-model="todo.newTask.name" required>
   </div>
-  <div class="form-group" ng-class="{'has-error': !todo.newTask.desc}">
+  <div class="form-group" ng-class="{"has-error": !todo.newTask.desc}">
     <label class="control-label">Description</label>
     <input class="form-control" type="text" ng-model="todo.newTask.desc" required>
   </div>
-  <div class="form-group" ng-class="{'has-error': !todo.newTask.due}">
+  <div class="form-group" ng-class="{"has-error": !todo.newTask.due}">
     <label class="control-label">Due Date</label>
     <input class="form-control" type="text" ng-model="todo.newTask.due" bs-datepicker required>
   </div>
